@@ -1,29 +1,40 @@
-µÚÒ»²½£º½¨Á¢git²Ö¿â
-cdµ½ÄãµÄ±¾µØÏîÄ¿¸ùÄ¿Â¼ÏÂ£¬Ö´ĞĞgitÃüÁî
+ç¬¬ä¸€æ­¥ï¼šå»ºç«‹gitä»“åº“
+cdåˆ°ä½ çš„æœ¬åœ°é¡¹ç›®æ ¹ç›®å½•ä¸‹ï¼Œæ‰§è¡Œgitå‘½ä»¤
 git init
 
 
-µÚ¶ş²½£º½«ÏîÄ¿µÄËùÓĞÎÄ¼şÌí¼Óµ½²Ö¿âÖĞ
+ç¬¬äºŒæ­¥ï¼šå°†é¡¹ç›®çš„æ‰€æœ‰æ–‡ä»¶æ·»åŠ åˆ°ä»“åº“ä¸­
 git add
 
 
-Èç¹ûÏëÌí¼ÓÄ³¸öÌØ¶¨µÄÎÄ¼ş£¬Ö»Ğè°Ñ.»»³ÉÌØ¶¨µÄÎÄ¼şÃû¼´¿É
+å¦‚æœæƒ³æ·»åŠ æŸä¸ªç‰¹å®šçš„æ–‡ä»¶ï¼Œåªéœ€æŠŠ.æ¢æˆç‰¹å®šçš„æ–‡ä»¶åå³å¯
 
-µÚÈı²½£º½«addµÄÎÄ¼şcommitµ½²Ö¿â
-git commit -m '×¢ÊÍÓï¾ä'
-
-
-µÚËÄ²½£ºÈ¥githubÉÏ´´½¨×Ô¼ºµÄRepository£¬´´½¨Ò³ÃæÈçÏÂÍ¼ËùÊ¾£º
+ç¬¬ä¸‰æ­¥ï¼šå°†addçš„æ–‡ä»¶commitåˆ°ä»“åº“
+git commit -m 'æ³¨é‡Šè¯­å¥'
 
 
-µÚÎå²½£ºÖØµãÀ´ÁË£¬½«±¾µØµÄ²Ö¿â¹ØÁªµ½githubÉÏ
+ç¬¬å››æ­¥ï¼šå»githubä¸Šåˆ›å»ºè‡ªå·±çš„Repositoryï¼Œåˆ›å»ºé¡µé¢å¦‚ä¸‹å›¾æ‰€ç¤ºï¼š
+
+
+ç¬¬äº”æ­¥ï¼šé‡ç‚¹æ¥äº†ï¼Œå°†æœ¬åœ°çš„ä»“åº“å…³è”åˆ°githubä¸Š
 git remote add origin https://github.....
+å¯èƒ½å‡ºç°è¿™ä¸ªé—®é¢˜
+git config --global user.mail 'mail@example.com'
+git config --global user.name 'you name'
 
 
-µÚÁù²½£ºÉÏ´«githubÖ®Ç°£¬ÒªÏÈpullÒ»ÏÂ£¬Ö´ĞĞÈçÏÂÃüÁî£º
+ç¬¬å…­æ­¥ï¼šä¸Šä¼ githubä¹‹å‰ï¼Œè¦å…ˆpullä¸€ä¸‹ï¼Œæ‰§è¡Œå¦‚ä¸‹å‘½ä»¤ï¼š
 git pull origin master
+å¯èƒ½å‡ºç°è¿™ä¸ªé—®é¢˜ è¯´æ˜mdæ–‡ä»¶ä¸åœ¨æœ¬åœ° åŠ å…¥git pull --rebase origin master è¿™ä¸€æ¡å‘½ä»¤
+To https://github.com/upupuup/git.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/upupuup/git.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 
-µÚÆß²½£¬Ò²¾ÍÊÇ×îºóÒ»²½£¬ÉÏ´«´úÂëµ½githubÔ¶³Ì²Ö¿â
+ç¬¬ä¸ƒæ­¥ï¼Œä¹Ÿå°±æ˜¯æœ€åä¸€æ­¥ï¼Œä¸Šä¼ ä»£ç åˆ°githubè¿œç¨‹ä»“åº“
 git push -u origin master
 
